@@ -19,6 +19,28 @@
   font-weight: 700;
   font-display: swap;
 }
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.375em;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  word-wrap: break-word;
+  background-color: #2d2d44
+}
 .muller body {
   font-family: "Muller", "Arial", sans-serif;
 }
@@ -36,4 +58,58 @@
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+.page-header {
+  position: relative;
+  
+  min-height: 60px;
+  color: #ffffff;
+  background-color: #2d2d44;
+}
+.page-header__logo {
+  display: flex;
+  flex: 0 0 auto;
+  height: 60px;
+}
+.page-header__logo img {
+  display: block;
+  width: 80px;
+  height: 36px;
+  margin: auto 0;
+}
+.page-header__logo:focus img, .page-header__logo:hover img {
+  opacity: 0.5;
+}
+.main-nav {
+  position: relative;
+  flex: 1 1 auto;
+}
+.main-nav li {
+  margin: 0;
+}
+.main-nav__list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+.main-nav__list--main .main-nav__item {
+  float: left;
+  width: 100%;
+}
+.main-nav__item {
+  position: relative;
+  white-space: nowrap;
+  border-bottom: 1px solid #6c6c7c;
+}
+.main-nav__list--user {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  max-width: 250px
 }
