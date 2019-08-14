@@ -19,30 +19,22 @@
   font-weight: 700;
   font-display: swap;
 }
-html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
-  height: 100%;
-  font-size: 10px;
-  -webkit-tap-highlight-color: transparent
-}
 body {
-  margin: 0;
-  display: flex;
+  margin: 0; /* Внешние отступы */
+  /*display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-width: 320px;
-  min-height: 100vh;
-  font-size: 14px;
+  justify-content: space-between;*/
+  min-width: 320px; /* Минимальная ширина блока */
+  min-height: 100vh; /* Минимальная высота блока 100% окна браузера*/
+  font-size: 14px; /* Размер шрифта */
   line-height: 1.375em;
-  font-family: "Arial", sans-serif;
-  color: #333;
-  word-wrap: break-word;
-  background-color: #2d2d44
+  font-family: "Arial", sans-serif; /* Шрифт */
+  color: #333333; /* Цвет шрифта */
+  word-wrap: break-word; /* Перенос слов */
+  background-color: #2d2d44; /* Цвет фона */
 }
 .muller body {
-  font-family: "Muller", "Arial", sans-serif;
+  font-family: "Muller", "Arial", sans-serif; /* Шрифт */
 }
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
