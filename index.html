@@ -16,22 +16,30 @@
   </head>
   
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--home">
       <h1 class="visually-hidden">Интерактивные и бесплатные онлайн-курсы Free HTML Academy</h1>
-      <a class="page-header__logo" href="index.html" aria-label="На главную Free HTML Academy">
-        <img src="img/logo.v2.svg" width="104" height="36" alt="Free HTML Academy">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list main-nav__list--main">
-          <li class="main-nav__item">Курсы</li>
-          <li class="main-nav__item">Профессии</li>
-          <li class="main-nav__item">Интенсивы</li>
-        </ul>
-        <ul class="main-nav__list main-nav__list--user">
-          <li class="main-nav__item">Регистрация</li>
-          <li class="main-nav__item">Войти</li>
-        </ul>
-      </nav>
+      <div class="page-header__container">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html" aria-label="На главную Free HTML Academy">
+            <img src="img/logo.v2.svg" width="104" height="36" alt="Free HTML Academy">
+          </a>
+          <nav class="main-nav">
+            <div class="main-nav__dropdown">
+              <div class="main-nav__dropdown-inner">
+                <ul class="main-nav__list main-nav__list--main">
+                  <li class="main-nav__item"><a href="courses/index.html" class="main-nav__link">Курсы</a></li>
+                  <li class="main-nav__item main-nav__item--dropdown">Профессии</li>
+                  <li class="main-nav__item main-nav__item--dropdown">Интенсивы</li>
+                </ul>
+                <ul class="main-nav__list main-nav__list--user">
+                  <li class="main-nav__item">Регистрация</li>
+                  <li class="main-nav__item">Войти</li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
   </body>
 </html>
