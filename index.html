@@ -2,27 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <script>
-      var b=document.documentElement.classList;
-      b.remove('no-js');
-      if(!window.Promise||!window.sessionStorage||!!sessionStorage.getItem('muller.v2'))
-      {
-        b.add('muller');
-      }      
-    </script>
     <link rel="stylesheet" href="css/outlines.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Free HTML Academy: бесплатные интерактивные онлайн-курсы по HTML, CSS и JavaScript</title>
   </head>
   
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
           <li>Курсы</li>
           <li>Профессии</li>
           <li>Интенсивы</li>
         </ul>
-        <ul>
+        <ul class="main-nav__list">
           <li>Регистрация</li>
           <li>Войти</li>
         </ul>
