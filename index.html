@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="ru" class="no-js">
+﻿<!doctype html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <script>
@@ -7,48 +7,28 @@
       b.remove('no-js');
       if(!window.Promise||!window.sessionStorage||!!sessionStorage.getItem('muller.v2'))
       {
-        b.add('muller')
-      }
-      
+        b.add('muller');
+      }      
     </script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/outlines.css">
     <title>Free HTML Academy: бесплатные интерактивные онлайн-курсы по HTML, CSS и JavaScript</title>
   </head>
   
   <body>
-    <header class="page-header page-header--home">
-      <h1 class="visually-hidden">Интерактивные и бесплатные онлайн-курсы Free HTML Academy</h1>
-      <div class="page-header__container">
-        <div class="page-header__top">
-          <a class="page-header__logo" href="index.html" aria-label="На главную Free HTML Academy">
-            <img src="img/logo.v2.svg" width="104" height="36" alt="Free HTML Academy">
-          </a>
-          <nav class="main-nav">
-            <div class="main-nav__dropdown">
-              <div class="main-nav__dropdown-inner">
-                <ul class="main-nav__list main-nav__list--main">
-                  <li class="main-nav__item">
-                    <a href="courses/index.html" class="main-nav__link">
-                      <span class="main-nav__icon">
-                        <svg aria-hidden="true" width="16" height="16">
-                          <use xlink:href="img/sprites/general.v27.svg#course"></use>
-                        </svg>
-                      </span>
-                      Курсы
-                    </a>
-                  </li>
-                  <li class="main-nav__item main-nav__item--dropdown">Профессии</li>
-                  <li class="main-nav__item main-nav__item--dropdown">Интенсивы</li>
-                </ul>
-                <ul class="main-nav__list main-nav__list--user">
-                  <li class="main-nav__item">Регистрация</li>
-                  <li class="main-nav__item">Войти</li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
+    <header>
+      <nav>
+        <ul>
+          <li>Курсы</li>
+          <li>Профессии</li>
+          <li>Интенсивы</li>
+        </ul>
+        <ul>
+          <li>Регистрация</li>
+          <li>Войти</li>
+        </ul>
+      </nav>
     </header>
+    <main>Здесь располагается содержимое нового тега main</main>
+    <footer>Здесь располагается содержимое нового тега footer</footer>
   </body>
 </html>
