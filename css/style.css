@@ -61,15 +61,46 @@ body {
   display: flex;
 }
 .main-nav__item {
+  position: relative;
   margin: 0;
-  
 }
-.main-nav__item a {
+.main-nav__link {
   color: #ffffff;
   display: block;
-  padding: 20px 10px 20px 30px;
+  padding: 20px 10px;
   text-decoration: none;
 }
-.main-nav__item a:hover {
+.main-nav__link[href]:focus svg, 
+.main-nav__link[href]:hover svg {
+  color: #ffffff;
+  opacity: 1
+}
+.main-nav__link svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  opacity: .5;
+  fill: #ffffff;
+}
+.main-nav__link:hover {
   background-color: #1d1468;
 }
+/*.main-nav__item::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  
+  width: 16px;
+  height: 16px;
+  
+  background-image: url("../img/sprites/general.v27.svg#course");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: 1px solid green;
+}*/
+
+
+
+
+
