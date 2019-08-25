@@ -43,6 +43,7 @@ body {
     repeating-linear-gradient(-150deg,rgba(255,255,255,.06),rgba(255,255,255,.06) 1px,transparent 0,transparent 41px);
   background-size: 82px 47px;
   background-color: #302683;
+  color: #ffffff;
 }
 .page-header__container {
   padding-right: 25px;
@@ -86,6 +87,28 @@ body {
 }
 .main-nav__link:hover {
   background-color: #1d1468;
+}
+.start-home {
+  padding-top: 110px;
+  padding-bottom: 125px;
+}
+.start-home__top {
+  display: flex;
+  min-height: 350px;
+  max-width: 980px;
+  margin: auto;
+}
+.start-home__logo {
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align: left;  
+}
+.start-home__message-text {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.333em;
+  text-align: left;
+  font-weight: 700;
 }
 /*.main-nav__item::before {
   content: "";
