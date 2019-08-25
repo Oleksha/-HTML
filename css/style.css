@@ -113,6 +113,13 @@ body {
   font-weight: 700;
   max-width: 50%;
 }
+.features__item {
+  display: flex;
+  align-items: center;
+  max-width: 980px;
+  margin: 0 auto 10px;
+  padding-left: 50px;
+}
 /*.main-nav__item::before {
   content: "";
   position: absolute;
