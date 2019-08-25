@@ -21,6 +21,8 @@
 }
 body {
   font-family: "Muller", "Arial", sans-serif; /* Шрифт */
+  font-size: 16px;
+  line-height: 1.375em;
 }
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
@@ -109,6 +111,7 @@ body {
   line-height: 1.333em;
   text-align: left;
   font-weight: 700;
+  max-width: 50%;
 }
 /*.main-nav__item::before {
   content: "";
