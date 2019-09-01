@@ -113,12 +113,63 @@ body {
   font-weight: 700;
   max-width: 50%;
 }
+.features {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 25px 50px;
+}
 .features__item {
   display: flex;
   align-items: center;
   max-width: 980px;
   margin: 0 auto 10px;
   padding-left: 50px;
+}
+.features__item::after {
+    content: "";
+    order: 1;
+    display: block;
+    width: 270px;
+    height: 270px;
+    margin: 0 0 0 15px;;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features__text {
+    flex-basis: 66.66667%;
+    order: 0;
+    max-width: 66.66667%;
+    margin-right: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.features__item--death-star::after {
+    background-image: url("../img/icons/icon_death-star.v2.svg");
+}
+.features__item--treasure-map::after {
+    background-image: url("../img/icons/icon_treasure-map.v2.svg");
+}
+.features__item--laboratory::after {
+    background-image: url("../img/icons/icon_laboratory.v2.svg");
+}
+.features__item--biceps::after {
+    background-image: url("../img/icons/icon_biceps.v2.svg");
+}
+.features__item--keks-bane::after {
+    background-image: url("../img/icons/icon_keks-bane.v2.svg");
+}
+.features__item--reverse::after {
+    order: 0;
+    margin-right: 15px;
+    margin-left: 0;
+}
+.features__item--reverse .features__text {
+    order: 1;
+    margin-right: 0;
+    margin-left: 15px;
 }
 /*.main-nav__item::before {
   content: "";
